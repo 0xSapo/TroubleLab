@@ -2,7 +2,7 @@
 
 sudo apt install -y \
   ca-certificates curl gnupg \
-  apt-transport-https git vim htop
+  apt-transport-https git
 
 # Add Oficial Docker Repo 
 install -m 0755 -d /etc/apt/keyrings
