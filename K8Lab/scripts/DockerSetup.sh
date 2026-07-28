@@ -1,10 +1,8 @@
-#!/bin/bash
-
-# Update and install dependencies
+# update and install dependencies
 
 sudo apt install -y \
   ca-certificates curl gnupg \
-  apt-transport-https git
+  apt-transport-https git vim htop
 
 # Add Oficial Docker Repo 
 install -m 0755 -d /etc/apt/keyrings
@@ -25,14 +23,3 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # Add User To Docker Group To Use Docker W/O sudo 
 sudo usermod -aG docker $USER
 newgrp docker
-
-## Setup Dirs
-mkdir -p $HOME/lab/my-app/src
-mkdir $HOME/lab/gitea
-mkdir -p $HOME/k8s
-
-## K3s
-curl -sfL https://get.k3s.io/ | sh -
-mkdir -p $HOME/.kube
-sudo cp /etc/rancher/k3s/k3s.yaml $HOME/.kube/config
-sudo chown $USER:$USER $HOME/.kube/config
