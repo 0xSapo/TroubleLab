@@ -12,9 +12,9 @@ Kubernetes laboratory.
 
 ## Requirements
 Minimum requirements for the lab (excluding host consumption)
-Storage:    20 GB
-CPU:        2 cores
-RAM:        4GB
+- Storage:    20 GB
+- CPU:        2 cores
+- RAM:        4GB
 
 # K8Lab/
 The lab's core directory is divided into the `scripts`, `k8s/`, and `lab/` directories.
@@ -24,9 +24,9 @@ DockerSetup.sh: Automate docker installation and permissions assignment
 K3sSetup.sh:    Install K3s, setup user-level config
 
 ## lab/
-gitea/ : Directory where Gitea (self-hosted GitHub) and the registry are configured and managed using `docker-compose.yaml` to emulate ECR registries
-monitoring/ : It contains the `docker-compose.yaml` file for deploying the `Grafana` and `Prometheus` monitoring applications, as well as the `prometheus.yaml` configuration file
-my-app/ : Directory related to the Dummy app
+- gitea/ : Directory where Gitea (self-hosted GitHub) and the registry are configured and managed using `docker-compose.yaml` to emulate ECR registries
+- monitoring/ : It contains the `docker-compose.yaml` file for deploying the `Grafana` and `Prometheus` monitoring applications, as well as the `prometheus.yaml` configuration file
+- my-app/ : Directory related to the Dummy app
           - `src/`:         A directory that contains the `index.js` file with the Dummy application
           - `package.json`: The file that manages the dependencies of the JS application 
           - `Dockerfile`:   Automate image creation
