@@ -1,3 +1,4 @@
+#!/bin/bash
 # update and install dependencies
 
 sudo apt install -y \
