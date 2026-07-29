@@ -1,3 +1,4 @@
+#cloud-config
 hostname: troublelab
 users:
   - name: troublelab
