@@ -5,10 +5,10 @@ Kubernetes laboratory.
 > The lab configurations are designed for easy interaction and are NOT suitable for production environments. 
 
 ## Architecture
-K3s:                        A Lightweight Kubernetes Distribution
-Gitea:                      For image registry 
-Prometheus and Grafana:     Monitoring
-Dummy JS Web App
+- K3s:                        A Lightweight Kubernetes Distribution
+- Gitea:                      For image registry 
+- Prometheus and Grafana:     Monitoring
+- Dummy JS Web App
 
 ## Requirements
 Minimum requirements for the lab (excluding host consumption)
