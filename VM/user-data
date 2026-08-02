@@ -1,9 +1,0 @@
-#cloud-config
-hostname: troublelab
-users:
-  - name: troublelab
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    shell: /bin/bash
-    ssh_authorized_keys:
-      - ssh-ed25519 $SSH_VALUE $USER
-ssh_pwauth: false

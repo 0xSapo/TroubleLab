@@ -34,40 +34,6 @@ The lab's core directory is divided into the `scripts`, `k8s/`, and `lab/` direc
 ## k8s
 Contents kubernetes manifest `deployment.yaml` para la ejecucion de kubectl
 
-# VM/
-Directory for running the lab within a virtual machine managed by QEMU
-
-- meta-data:  Define VM identity
-- user-data:  Define first boot
-- setup.sh:   Automate image setup after configure
-- run.sh:     Run Image with recommended resources
-
-
-# Create VM
-You can avoid this seccion if you prefer run it locally
-## Dependencies 
-```bash
-sudo apt install qemu-system-x86 qemu-utils cloud-image-utils
-```
-## Configure
-Add your ssh pub key to `user-data` on:
-```
-    ssh_authorized_keys:
-      - ssh-ed25519 $SSH_VALUE $USER
-```
-
-## Download Image
-Download image and build seed using `cloud-localds`
-```bash
-cd ./VM
-./setup.sh
-```
-## Run VM
-Run the VM with recommended resources and enabling port forwarding 
-```bash
-./run.sh
-```
-
 # Setup Lab
 
 >[!NOTE]
