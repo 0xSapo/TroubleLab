@@ -109,6 +109,16 @@ cd ../../k8s
 kubectl apply -f ./deployment.yaml
 
 ```
+
+Confirm the status of your pods
+``` bash
+kubectl get pods
+# NAME                      READY   STATUS    RESTARTS   AGE
+# my-app-754d789fcd-28dnn   1/1     Running   0          73s
+# my-app-754d789fcd-lh2b6   1/1     Running   0          73s
+
+```
+
 ## Monitoring 
 
 ```bash
