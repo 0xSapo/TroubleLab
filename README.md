@@ -20,16 +20,16 @@ Minimum requirements for the lab (excluding host consumption)
 The lab's core directory is divided into the `scripts`, `k8s/`, and `lab/` directories.
 
 ## scripts/
-DockerSetup.sh: Automate docker installation and permissions assignment
-K3sSetup.sh:    Install K3s, setup user-level config
+- DockerSetup.sh: Automate docker installation and permissions assignment
+- K3sSetup.sh:    Install K3s, setup user-level config
 
 ## lab/
 - gitea/ : Directory where Gitea (self-hosted GitHub) and the registry are configured and managed using `docker-compose.yaml` to emulate ECR registries
 - monitoring/ : It contains the `docker-compose.yaml` file for deploying the `Grafana` and `Prometheus` monitoring applications, as well as the `prometheus.yaml` configuration file
 - my-app/ : Directory related to the Dummy app
-          - `src/`:         A directory that contains the `index.js` file with the Dummy application
-          - `package.json`: The file that manages the dependencies of the JS application 
-          - `Dockerfile`:   Automate image creation
+  - `src/`:         A directory that contains the `index.js` file with the Dummy application
+  - `package.json`: The file that manages the dependencies of the JS application 
+  - `Dockerfile`:   Automate image creation
 
 ## k8s
 Contents kubernetes manifest `deployment.yaml` para la ejecucion de kubectl
