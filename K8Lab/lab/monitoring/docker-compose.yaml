@@ -12,7 +12,7 @@ services:
   grafana:
     image: grafana/grafana:latest
     ports:
-      - "3002:3000"
+      - "3002:3002"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin123
     restart: unless-stopped
