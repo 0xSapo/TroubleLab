@@ -109,4 +109,9 @@ cd ../../k8s
 kubectl apply -f ./deployment.yaml
 
 ```
+## Monitoring 
 
+```bash
+cd ../lab/monitoring/
+docker compose up -d
+```
